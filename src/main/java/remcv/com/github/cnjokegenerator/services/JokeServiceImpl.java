@@ -1,5 +1,6 @@
 package remcv.com.github.cnjokegenerator.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
@@ -11,9 +12,10 @@ public class JokeServiceImpl implements JokeService
     private final ChuckNorrisQuotes cnq;
 
     // constructor
-    public JokeServiceImpl()
+    @Autowired
+    public JokeServiceImpl(ChuckNorrisQuotes cnq)
     {
-        cnq = new ChuckNorrisQuotes();
+        this.cnq = cnq;
     }
 
     // methods
