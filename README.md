@@ -8,3 +8,4 @@ Inspired by Spring Framework Guru tutorial on Udemy (see his github page).
 - Spring Boot 2
 - Thymeleaf template engine
 - Java Core
+- Maven
